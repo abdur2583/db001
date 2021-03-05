@@ -46,39 +46,6 @@
     }
 
 
-    //core php code to select inset data in the database
-/* 
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $qf = $_POST['qf'];
-        $mobile = $_POST['mobile'];
-        $job = $_POST['job'];
-
-        $insertQuerry = "INSERT INTO submit(name, email, phone, qf, job) VALUES ('$name', '$email', '$mobile', '$qf', '$job')";
-    
-
-        $res=  mysqli_query($conn, $insertQuerry);
-
-        if($res){
-            ?>
-                <script>
-                alert("data inserted successfully");
-                </script>
-            <?php
-
-        }else {
-            ?>
-            <script>
-            alert("data not inserted successfully");
-            </script>
-        <?php
-        }
-
-    }
- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
