@@ -5,8 +5,10 @@
     $db_pass = '';
     $db_name = 'custom';
 
+    // connection with database
     $conn = new mysqli($db_host,$db_user,$db_pass,$db_name);
 
+    //check connection
     if($conn->connect_error){
         die("connection fail".$conn->connect_error);
     }else { ?>
@@ -14,7 +16,8 @@
         
         <?php 
     }
-
+    
+    //core code to insert data in the database
     if(isset($_POST['submit'])){
         
         $name = $_POST['name'];
