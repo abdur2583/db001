@@ -38,8 +38,7 @@ $arryData = mysqli_fetch_array($showData);
 
         $updateQuery = "UPDATE SUBMIT SET id=$idupdate, name='$name', email='$email', qf='$qf', phone='$mobile', job='$job' where id=$idupdate";
 
-        //$updateQuery = "UPDATE `submit` SET `id`=$idupdate,`name`='$name',`email`='$email',`phone`=[value-4],`qf`=[value-5],`job`=[value-6] WHERE id=$idupdate ";
-
+      
         $result = mysqli_query($conn,$updateQuery);
 
         if($result){
@@ -59,39 +58,7 @@ $arryData = mysqli_fetch_array($showData);
     }
 
 
-    //core php code to select inset data in the database
-/* 
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $qf = $_POST['qf'];
-        $mobile = $_POST['mobile'];
-        $job = $_POST['job'];
-
-        $insertQuerry = "INSERT INTO submit(name, email, phone, qf, job) VALUES ('$name', '$email', '$mobile', '$qf', '$job')";
     
-
-        $res=  mysqli_query($conn, $insertQuerry);
-
-        if($res){
-            ?>
-                <script>
-                alert("data updated successfully");
-                </script>
-            <?php
-
-        }else {
-            ?>
-            <script>
-            alert("data not updated successfully");
-            </script>
-        <?php
-        }
-
-    }
- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
